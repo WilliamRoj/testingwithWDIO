@@ -3,7 +3,16 @@
 describe('Smoke test - loading website', () => {
     it('load website', async () => {
         await browser.url('https://www.afloresconstruction.com')
-        await expect($('#stickyHeaderSpacer')).toBeExisting()
+        // await expect($('#stickyHeaderSpacer')).toBeExisting()
+
+        await expect($('//*[@id="1890702965"]')).toBeExisting()
+        await expect($('//*[@id="1124377537"]')).toBeExisting()
+        await expect($('//*[@id="1899840987"]')).toBeExisting()
+        await expect($('//*[@id="1506307445"]')).toBeExisting()
+        await expect($('//*[@id="1815573101"]')).toBeExisting()
+        await expect($('//*[@id="1516365455"]')).toBeExisting()
+
+
     })
 
     it('Click on 0% APR verify redericts to Heart', async () => {
@@ -26,3 +35,4 @@ describe('Smoke test - loading website', () => {
 
 
 //*[@id="root"]/header/div[2]/div[2]/a[2]/div/img
+1739259558

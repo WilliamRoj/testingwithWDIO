@@ -3,3 +3,5 @@ class App {
         browser.url('https://www.afloresconstruction.com')
     }
 }
+
+export default new App()

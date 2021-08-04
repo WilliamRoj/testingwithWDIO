@@ -1,9 +1,9 @@
-
+import App from '../../page-objects/App'
 
 describe('Smoke test - loading website', () => {
     it('load website', async () => {
-        await browser.url('https://www.afloresconstruction.com')
-        // await expect($('#stickyHeaderSpacer')).toBeExisting()
+        // await browser.url('https://www.afloresconstruction.com')
+        App.openHomepage()
 
         await expect($('//*[@id="1890702965"]')).toBeExisting()
         await expect($('//*[@id="1124377537"]')).toBeExisting()

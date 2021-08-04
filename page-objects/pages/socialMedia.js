@@ -1,13 +1,13 @@
 import Base from '../Base'
 
-class HeartApr extends Base {
-    get heartLink () {
-        return $('/html/body/div[2]/div/div/div/div/div/div/div/div[2]/div[4]/div/div/div/div[5]/div/div/div/a/img')
+class SocialMedia extends Base {
+    get socialMediaLink () {
+        return $('//*[@id="1531299188"]/div/div/a[1]/span')
     }
 
-    selectHeart() {
-        this.heartLink.click()
+    selectSocialMedia() {
+        this.socialMediaLink.click()
     }
 }
 
-export default new HeartApr()
+export default new SocialMedia()

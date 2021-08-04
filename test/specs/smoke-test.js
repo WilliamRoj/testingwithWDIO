@@ -1,5 +1,6 @@
 import App from '../../page-objects/App'
 import RenderingCards from '../../page-objects/pages/renderingCards'
+import NavBar from '../../page-objects/pages/navBar'
 
 describe('Smoke test - loading website', () => {
     it('load website', () => {
@@ -12,9 +13,10 @@ describe('Smoke test - loading website', () => {
         await (await $('/html/body/div[2]/div/div/div/div/div/div/div/div[2]/div[4]/div/div/div/div[5]/div/div/div/a/img')).click()
     })
 
-    it('Click on Nav bar link', async () => {
+    it('Click on Nav bar link', () => {
         App.openHomepage()
-        await (await $('/html/body/div[2]/div/div/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div/div[2]/nav/ul/li[2]')).click()
+        NavBar.selectLink()
+        // await (await $('/html/body/div[2]/div/div/div/div/div/div/div/div[2]/div[2]/div/div/div[2]/div/div[2]/nav/ul/li[2]')).click()
     })
 
     it('Click on FB link', async () => {

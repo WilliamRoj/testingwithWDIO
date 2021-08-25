@@ -1,8 +1,8 @@
 import App from '../../page-objects/App'
-import RenderingCards from '../../page-objects/pages/renderingCards'
-import NavBar from '../../page-objects/pages/navBar'
-import HeartApr from '../../page-objects/pages/heartApr'
-import SocialMedia from '../../page-objects/pages/socialMedia'
+import RenderingCards from '../../page-objects/pages/afloresconstruction/renderingCards'
+import NavBar from '../../page-objects/pages/afloresconstruction/navBar'
+import HeartApr from '../../page-objects/pages/afloresconstruction/heartApr'
+import SocialMedia from '../../page-objects/pages/afloresconstruction/socialMedia'
 
 describe('Smoke test - loading website', () => {
     it('load website', () => {

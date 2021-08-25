@@ -1,12 +1,12 @@
-import App from '../../page-objects/App'
-import RenderingCards from '../../page-objects/pages/afloresconstruction/renderingCards'
-import NavBar from '../../page-objects/pages/afloresconstruction/navBar'
-import HeartApr from '../../page-objects/pages/afloresconstruction/heartApr'
-import SocialMedia from '../../page-objects/pages/afloresconstruction/socialMedia'
+import App from '../../../page-objects/App'
+import RenderingCards from '../../../page-objects/pages/afloresconstruction/renderingCards'
+import NavBar from '../../../page-objects/pages/afloresconstruction/navBar'
+import HeartApr from '../../../page-objects/pages/afloresconstruction/heartApr'
+import SocialMedia from '../../../page-objects/pages/afloresconstruction/socialMedia'
 
 describe('Smoke test - loading website', () => {
     it('load website', () => {
-        // await browser.url('https://www.afloresconstruction.com')
+        //  browser.url('https://www.afloresconstruction.com')
         App.openHomepage()
         RenderingCards.cardIsVisible()
     })

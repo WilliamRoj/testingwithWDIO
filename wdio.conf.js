@@ -24,12 +24,12 @@ exports.config = {
     // will be called from there.
     //
     specs: [
-        './test/specs/smoke-test.js'
+        './test/specs/Forward-test.js'
     ],
     // Patterns to exclude.
     exclude: [
         // 'path/to/excluded/files'
-        './test/specs/example.e2e.js', './test/specs/goldenEagle-smoke.js'
+        './test/specs/example.e2e.js',
     ],
     //
     // ============
